@@ -18,8 +18,129 @@
 <body>
     <!-- html5 響應式網頁架構 id(唯一 # ) class(類別 . ) 語意式標籤與 -->
     <!-- 頁首header (每頁固定) 主內容main(隨著頁面主題而不同) 頁尾footer(每頁固定) 文章(article) -->
-    <header></header>
-    <article id="main"></article>
-    <footer></footer>
+    <header>
+        <nav>
+            <!-- 導覽列標籤 nav 項目清單 ul li；商標 標題1(h1) -->
+            <ul class="subnav">
+                <h1 id="logo">ANNADOLLY</h1>   
+            <!-- icon 區塊標籤div id:icon -->
+                <div id="icon">
+                    <li class="Member">會員</li>
+                    <li class="ShopppingCar">購物車</li>
+                    <FORm>
+                        <li class="Search">搜尋</li>
+                    </FORm>
+                    <li class="Facebook">FB</li>
+                    <li class="Instagram">IG</li>
+                </div>
+            </ul>
+            <ul class="BtnBOX">
+                <LI>最新商品</LI>
+                <LI>RESTOCK</LI>
+                <LI>熱銷商品</LI>
+                <LI>流行女包</LI>
+                <UL>
+                    <LI>淑女包</LI>
+                    <LI>後背包</LI>
+                    <LI>馬鞍斜背包</LI>
+                </UL>
+                <LI>皮夾配件</LI>
+                <LI>風格貝帶</LI>
+                <LI>品牌小物</LI>
+            </ul>
+        </nav>
+    </header>
+   
+    <article>
+        <!-- 廣告區塊 div 命名 輪播功能用 javascript 命名建議用 ID選擇器；CSS3輪播功能 命名 ID選擇器或是 類別選擇器 (class) -->
+        
+            <div id="banner">
+                <div class="LeftBtn">按鈕</div>
+                <ul id="ImBox">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <div class="RightBtn">按鈕</div>
+            </div>
+            <!--熱銷商品 最新商品 -->
+            <article id="">
+                <h1>熱銷商品</h1>
+                <section class="SCommodity">
+                    <p class="images">商品圖片</p>
+                    <p class="LName"> 
+                        <h3>商品名稱</h3>
+                    </p>
+                    <!-- 螢光標記 mark (不會換行) 刪除線 s-->
+                    <p class="Brief">商品簡介，文字字數超過36個字數(<mark>英文與阿拉伯數字為36個字數，中文為18個字數 <mark>)，會利用......設計</p>
+                </section>
+            </article>
+
+            <article id="">
+                <h1>最新商品</h1>
+                 <!-- 區段 section -->
+                 <section class="LCommodity">
+                    <p class="images">商品圖片</p>
+                    <p class="LName"> 
+                        <h3>商品名稱</h3>
+                        <ul>
+                            <li class="Love">我的最愛</li>
+                            <li class="ShopppingCar">購物車</li>
+                        </ul>
+                    </p>
+                    <!-- 螢光標記 mark (不會換行) 刪除線 s-->
+                    <p class="Brief">商品簡介，文字字數超過26個字數(<mark>英文與阿拉伯數字為26個字數，中文為13個字數 <mark>)，會利用......設計</p>
+                    <ul>
+                        <li class="originalPrice">原價<span><s>1,000</s></span>元</li>
+                        <li class="BargainPrice">特價<span>800</span>元</li>
+                    </ul>
+                </section>
+            </article>
+
+           
+           
+
+            <article>
+                <!-- 側邊攔 aside 商品分類 (建議中大型購物設定) -->
+                <article>
+                    <!-- 項目清單分類 -->
+                    <ul id="Tea">
+                        <h4>奶茶</h4>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                    <ul id="BlackTea">
+                        <h4>紅茶</h4>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </article>
+            </article>
+            <article id="">
+                <!-- 依照選取的分類，而呈現不同的內容 -->
+            </article>
+    </article>
+   
+    <footer>
+        <!-- 擁有者資訊 聯絡資訊 建議瀏覽器解析度  瀏覽人數(比較少用，資料庫運作) 版權聲明 連結:隱私權政策 網站安全政策 服務條款 商品的次選單 -->
+        <!-- 段落標籤 P ；行內範圍 span (不會另外換行) -->
+        <p> ANNADOLLY &COPY; 2020 - <span id="Year">2021</span> </p>
+        <P> &COPY;<span id="year">2021</span> ANNADOLLY </P>
+        <!-- 聯絡資訊 address 地址、客服電話、E-Mail、LineID、FB、Google地圖 -->
+        <address>
+            <p class="address">台中市</p>
+            <p class="TEL">0800-123456</p>
+            <P class="E-Mail">b7692613@gmail.com</P>
+            <p class="LineID">FB</p>
+            <P class="GoogleMap">地圖</P>
+        </address>
+    </footer>
 </body>
 </html>
