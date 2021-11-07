@@ -1,0 +1,40 @@
+//呼叫 html 標籤 例如:nav稱作 類型選擇
+//呼叫 id ，例如<li id="test"></li>，id="test"，「#」ID選擇器；「#test」
+//呼叫 class，class="test1"，「.」類別選擇器；「.test1」
+//scss 1.巢狀寫法 2.變數 $yourname(設定計算用的基礎值) 3.繼承
+
+//傳統 css3的寫法 穩藏
+ header {
+    //  寬度 100%
+    width: $W10 * 10;
+}
+address, #YudoIcon, .YudoBtnBox {
+    display: none;
+}
+#MenuBtn {
+    background-color: burlywood;
+}
+
+
+
+header {
+    // 寬度 100%
+    width: #W10 * 10;
+    nav{
+        #YudoIcon {
+            // 呼叫繼承物件
+            @extend %DN;
+        }
+        .YudoBtnBox{
+            // 呼叫繼承物件
+            @extend %DN;
+        }
+    }
+}
+
+footer {
+    address {
+        //呼叫繼承物件
+        @extend %DN;
+    }
+}
